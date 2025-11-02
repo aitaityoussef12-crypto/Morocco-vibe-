@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Sécurité des Travailleurs</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+        }
+
+        .container {
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Page de titre */
+        .title-page {
+            text-align: center;
+            padding: 80px 20px;
+            page-break-after: always;
+        }
+
+        .main-title {
+            font-size: 36px;
+            color: #1a5490;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 40px;
+        }
+
+        .intro-text {
+            text-align: justify;
+            font-size: 12px;
+            line-height: 1.8;
+            margin-top: 40px;
+            padding: 0 30px;
+        }
+
+        .illustration-box {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            margin: 40px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            color: #2c5f8d;
+            font-weight: bold;
+            margin: 30px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #2c5f8d;
+        }
+
+        .section-intro {
+            font-size: 11px;
+            margin-bottom: 15px;
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+        .content-block {
+            margin: 20px 0;
+        }
+
+        .content-block h3 {
+            font-size: 13px;
+            color: #1a5490;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .content-block p {
+            text-align: justify;
+            font-size: 11px;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        /* Listes */
+        ul {
+            margin: 15px 0 15px 20px;
+        }
+
+        li {
+            font-size: 11px;
+            margin-bottom: 10px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        li strong {
+            color: #1a5490;
+        }
+
+        /* Images illustratives */
+        .image-placeholder {
+            width: 100%;
+            height: 180px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 8px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            flex-direction: column;
+        }
+
+        .image-placeholder .icon-large {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        .section1-image {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .section2-image {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .section3-image {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        }
+
+        /* Conclusion */
+        .conclusion {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 5px solid #2c5f8d;
+            margin-top: 40px;
+        }
+
+        .conclusion h2 {
+            font-size: 20px;
+            color: #2c5f8d;
+            margin-bottom: 15px;
+        }
+
+        .conclusion p {
+            font-size: 11px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 12px;
+            font-style: italic;
+        }
+
+        .final-callout {
+            background: #2c5f8d;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 11px;
+            line-height: 1.7;
+        }
+
+        .final-callout strong {
+            font-size: 13px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            font-size: 9px;
+            color: #999;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-style: italic;
+        }
+
+        /* Page breaks */
+        .page-break {
+            page-break-after: always;
+        }
+
+        /* Highlight boxes */
+        .highlight-box {
+            background: #e3f2fd;
+            border-left: 4px solid #1a5490;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box p {
+            font-size: 11px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Page de titre -->
+    <div class="title-page">
+        <div class="icon">🛡️</div>
+        <h1 class="main-title">La Sécurité des Travailleurs</h1>
+        <p class="subtitle">Guide pratique pour un environnement de travail sûr et sain</p>
+
+        <div class="illustration-box">
+            <div style="text-align: center;">
+                <div style="font-size: 60px; margin-bottom: 10px;">⚠️</div>
+                <div>Sécurité et Prévention</div>
+            </div>
+        </div>
+
+        <div class="intro-text">
+            <p>La sécurité au travail est un enjeu majeur qui concerne chaque employeur et chaque travailleur.
+            Dans un monde professionnel en constante évolution, protéger la santé et la sécurité des employés
+            n'est pas seulement une obligation légale, mais aussi un investissement dans la productivité et
+            le bien-être collectif. Ce guide présente les principes essentiels pour créer et maintenir un
+            environnement de travail sécuritaire.</p>
+        </div>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="container">
+        <div class="section page-break">
+            <h2 class="section-title">1. Les Risques Professionnels</h2>
+
+            <p class="section-intro">
+                Les risques professionnels sont présents dans tous les secteurs d'activité. Leur identification
+                et leur compréhension constituent la première étape vers un environnement de travail sécurisé.
+            </p>
+
+            <div class="image-placeholder section1-image">
+                <div class="icon-large">⚠️</div>
+                <div>Identification des Risques</div>
+            </div>
+
+            <div class="content-block">
+                <h3>Les principaux types de risques :</h3>
+                <ul>
+                    <li><strong>Risques physiques :</strong> Chutes, glissades, collisions, exposition au bruit excessif, vibrations, températures extrêmes.</li>
+                    <li><strong>Risques chimiques :</strong> Manipulation de produits toxiques, inhalation de vapeurs dangereuses, contact avec des substances corrosives.</li>
+                    <li><strong>Risques biologiques :</strong> Exposition à des virus, bactéries, champignons dans certains environnements de travail (hôpitaux, laboratoires).</li>
+                    <li><strong>Risques ergonomiques :</strong> Postures inadaptées, mouvements répétitifs, port de charges lourdes causant des troubles musculosquelettiques.</li>
+                    <li><strong>Risques psychosociaux :</strong> Stress chronique, harcèlement, surcharge de travail, manque de reconnaissance.</li>
+                </ul>
+            </div>
+
+            <div class="highlight-box">
+                <p><strong>💡 Point clé :</strong> L'évaluation des risques n'est pas une démarche ponctuelle, mais un processus continu qui doit s'adapter aux évolutions de l'entreprise.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>L'importance de l'évaluation des risques :</h3>
+                <p>
+                    Chaque entreprise doit procéder à une évaluation régulière des risques présents sur ses lieux de travail.
+                    Cette démarche permet d'identifier les dangers potentiels, d'analyser leur probabilité d'occurrence et
+                    leur gravité, puis de mettre en place des mesures préventives adaptées. Le document unique d'évaluation
+                    des risques professionnels (DUERP) est l'outil central de cette démarche.
+                </p>
+            </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section page-break">
+            <h2 class="section-title">2. Les Mesures de Prévention</h2>
+
+            <p class="section-intro">
+                La prévention est la clé pour réduire les accidents du travail et les maladies professionnelles.
+                Elle repose sur des principes concrets et applicables à tous les secteurs.
+            </p>
+
+            <div class="image-placeholder section2-image">
+                <div class="icon-large">🛡️</div>
+                <div>Protection et Prévention</div>
+            </div>
+
+            <div class="content-block">
+                <h3>Les principes généraux de prévention :</h3>
+                <ul>
+                    <li><strong>1. Éviter les risques :</strong> Supprimer le danger à la source quand c'est possible.</li>
+                    <li><strong>2. Évaluer les risques :</strong> Analyser ceux qui ne peuvent être évités.</li>
+                    <li><strong>3. Combattre les risques à la source :</strong> Agir sur les causes plutôt que sur les conséquences.</li>
+                    <li><strong>4. Adapter le travail à l'homme :</strong> Concevoir les postes de travail en tenant compte des capacités humaines.</li>
+                    <li><strong>5. Tenir compte de l'évolution technique :</strong> Intégrer les innovations pour améliorer la sécurité.</li>
+                    <li><strong>6. Remplacer ce qui est dangereux :</strong> Substituer les produits ou procédés dangereux par des alternatives plus sûres.</li>
+                    <li><strong>7. Planifier la prévention :</strong> Intégrer la sécurité dans l'organisation du travail.</li>
+                    <li><strong>8. Prioriser les protections collectives :</strong> Privilégier les mesures qui protègent tous les travailleurs.</li>
+                    <li><strong>9. Former et informer :</strong> Donner aux travailleurs les instructions appropriées.</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h3>Équipements de protection :</h3>
+                <p>
+                    Les équipements de protection individuelle (EPI) sont essentiels lorsque les risques ne peuvent être
+                    éliminés par d'autres moyens. Casques, gants, lunettes de protection, chaussures de sécurité,
+                    protections auditives et respiratoires doivent être adaptés aux risques identifiés, entretenus
+                    régulièrement et portés systématiquement.
+                </p>
+            </div>
+
+            <div class="highlight-box">
+                <p><strong>💡 Point clé :</strong> La formation est la première ligne de défense. Un travailleur bien formé est un travailleur en sécurité.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>Formation et sensibilisation :</h3>
+                <p>
+                    La formation continue des employés est indispensable. Elle doit couvrir les procédures de sécurité,
+                    l'utilisation correcte des équipements, les gestes de premiers secours et les comportements à adopter
+                    en cas d'urgence. Des sessions de sensibilisation régulières maintiennent la vigilance et renforcent
+                    la culture de sécurité.
+                </p>
+            </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section page-break">
+            <h2 class="section-title">3. Le Rôle de l'Entreprise et du Travailleur</h2>
+
+            <p class="section-intro">
+                La sécurité au travail est une responsabilité partagée. Employeurs et employés ont chacun
+                un rôle crucial à jouer pour créer et maintenir un environnement de travail sûr.
+            </p>
+
+            <div class="image-placeholder section3-image">
+                <div class="icon-large">🤝</div>
+                <div>Responsabilité Partagée</div>
+            </div>
+
+            <div class="content-block">
+                <h3>Les responsabilités de l'employeur :</h3>
+                <ul>
+                    <li><strong>Obligation de sécurité :</strong> L'employeur a une obligation légale de protéger la santé physique et mentale de ses employés.</li>
+                    <li><strong>Évaluation et prévention :</strong> Mettre en place une démarche d'évaluation des risques et des mesures de prévention appropriées.</li>
+                    <li><strong>Formation :</strong> Assurer la formation à la sécurité de tous les travailleurs, y compris les nouveaux arrivants.</li>
+                    <li><strong>Information :</strong> Communiquer clairement sur les risques et les procédures de sécurité.</li>
+                    <li><strong>Moyens matériels :</strong> Fournir les équipements de protection et les outils de travail adaptés.</li>
+                    <li><strong>Organisation :</strong> Planifier le travail de manière à limiter les risques et éviter la surcharge.</li>
+                    <li><strong>Consultation :</strong> Impliquer les représentants du personnel et les travailleurs dans les démarches de prévention.</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h3>Les responsabilités du travailleur :</h3>
+                <ul>
+                    <li><strong>Respecter les consignes :</strong> Suivre les instructions de sécurité et les procédures établies.</li>
+                    <li><strong>Utiliser les équipements :</strong> Porter et utiliser correctement les équipements de protection fournis.</li>
+                    <li><strong>Signaler les dangers :</strong> Alerter immédiatement sur toute situation dangereuse ou dysfonctionnement.</li>
+                    <li><strong>Participer à la formation :</strong> S'investir dans les sessions de formation et de sensibilisation.</li>
+                    <li><strong>Prendre soin de sa santé :</strong> Veiller à sa propre sécurité et à celle de ses collègues.</li>
+                    <li><strong>Droit d'alerte :</strong> Exercer son droit de retrait en cas de danger grave et imminent.</li>
+                    <li><strong>Contribuer à l'amélioration :</strong> Proposer des idées pour améliorer la sécurité sur le lieu de travail.</li>
+                </ul>
+            </div>
+
+            <div class="highlight-box">
+                <p><strong>💡 Point clé :</strong> La sécurité est l'affaire de tous. Chaque acteur, quel que soit son niveau hiérarchique, a un rôle à jouer.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>Une culture de sécurité collective :</h3>
+                <p>
+                    La sécurité ne peut être efficace que si elle est intégrée dans la culture de l'entreprise.
+                    Cela implique une communication ouverte, une reconnaissance des efforts en matière de sécurité,
+                    et une amélioration continue basée sur le retour d'expérience. Les comités de santé, sécurité
+                    et conditions de travail (CSSCT) jouent un rôle clé dans cette dynamique collaborative.
+                </p>
+            </div>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="conclusion">
+            <h2>Conclusion</h2>
+            <p>
+                La sécurité des travailleurs n'est pas une option, c'est une priorité absolue. Chaque accident
+                évité, chaque maladie professionnelle prévenue représente une vie protégée, une famille préservée
+                et une entreprise plus performante. En combinant vigilance, formation, équipements adaptés et
+                dialogue social, nous pouvons créer des environnements de travail où chacun rentre chez soi en
+                bonne santé.
+            </p>
+            <p>
+                <strong>Ensemble, faisons de la sécurité au travail une réalité quotidienne !</strong>
+            </p>
+            <p>
+                Rappelons-nous que la sécurité commence par chacun d'entre nous. Un geste simple, une attention
+                particulière, un signalement à temps peuvent faire toute la différence. Investir dans la sécurité,
+                c'est investir dans l'humain, et c'est toujours un investissement rentable.
+            </p>
+        </div>
+
+        <div class="final-callout">
+            <strong>💡 Retenez ceci :</strong>
+            Un travailleur en sécurité est un travailleur productif, épanoui et engagé.
+            La sécurité n'est pas une contrainte, c'est une valeur qui profite à tous !
+        </div>
+
+        <div class="footer">
+            Document éducatif - La Sécurité des Travailleurs © 2025
+        </div>
+    </div>
+</body>
+</html>
