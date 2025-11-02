@@ -1,0 +1,16 @@
+{
+  "name": "securite-travailleurs-pdf",
+  "version": "1.0.0",
+  "description": "Générateur de PDF pour la sécurité des travailleurs",
+  "main": "generate-pdf.js",
+  "scripts": {
+    "generate": "node generate-pdf.js"
+  },
+  "dependencies": {
+    "html-pdf-node": "^1.0.8",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.3",
+    "pdfkit": "^0.17.2",
+    "puppeteer": "^22.0.0"
+  }
+}
